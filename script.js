@@ -298,7 +298,7 @@ function showScreen(id) {
 // ─── SAVE TO GOOGLE SHEETS + GMAIL ───────────────────────────────
 function saveScoreToServer() {
     const totalQuestions = ROUNDS.reduce((sum, r) => sum + questions[r.category].length, 0);
-    const url = 'https://script.google.com/macros/s/AKfycbxtbFQ_d8gMsW4_jWX8ZlivVQR9zCd_ip8ZoSg8JtLAgp-0WgNP8SBXZexgLt0CMdHH/exec'
+    const url = 'https://script.google.com/macros/s/AKfycbzXwyyWFmLh8TbFghzlNvPWToT4rkgNu4I69nRpTup_iQx74cJzKaRZK7rIGNuAFV6d/exec'
         + '?name='  + encodeURIComponent(playerName)
         + '&score=' + encodeURIComponent(totalScore)
         + '&total=' + encodeURIComponent(totalQuestions);
